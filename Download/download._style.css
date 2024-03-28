@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    /* background-color: red; */
+    padding: 0 5%;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+}
+
+main {
+    background-color: aqua;
+    height: 100vh;
+    width: 220vh;
+    overflow: hidden;
+    position: relative;
+}
+
+header h1 {
+    font-size: 40px;
+    color: white;
+}
+header nav {
+    display: flex;
+    gap: 30px;
+}
+header nav a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 99px;
+    transition: 0.3s;
+    color: white;
+}
+header nav a.active {
+    background: #5247B9;
+}
+header nav a:hover {
+    background: #5247B9;
+}
+header nav:hover > a:not(:hover) {
+    background: none;
+}
+
+.parallax {
+    pointer-events: none;
+    transition: 0.3s cubic-bezier(0.2, 0.49, 0.32, 0.99);
+    
+}
+
+.backs {
+    position: absolute;
+    top: calc(-30% + 120px);
+    right: calc(0% - 75px);
+    width: 110%;
+    z-index: 2;
+}
+
+.img1 {
+    position: absolute;
+    top: calc(-30% - 50px);
+    left: calc(0% - 10px);
+    width: 105%;
+    z-index: 3;
+}
