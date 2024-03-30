@@ -25,8 +25,13 @@
 
     <div class="wrapper">
         <div class="form-box">
-            <h2>Login</h2>
+            <h2>Register</h2>
             <form action="">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="Person"></ion-icon></span>
+                    <input type="text" required>
+                    <label>Username</label>
+                </div>
                 <div class="input-box">
                     <span class="icon"><ion-icon name="mail"></ion-icon></span>
                     <input type="email" required>
@@ -38,12 +43,12 @@
                     <ion-icon name="eye" class="icon" onclick="togglePasswordVisibility()"></ion-icon>
                 </div>                
                 <div class="remember-forget">
-                    <label><input type="checkbox">Remember me</label>
-                    <a href="">Forgot password?</a>
+                    <label><input type="checkbox">Agree to T&Cs</label>
+                    <a href="../../About/about.html">T&cs Documentations</a>
                 </div>
-                <button type="submit" class="btn" onclick="redirect()">Login</button>
+                <button type="submit" class="btn" onclick="redirect()">Register</button>
                 <div class="login-register">
-                    <p>Don't have a account?<a href="./Register/index_signup.html" class="register-link">Register</a></p>
+                    <p>Already have a account?<a href="../index_signup.html" class="register-link">Login</a></p>
                 </div>
             </form>
         </div>

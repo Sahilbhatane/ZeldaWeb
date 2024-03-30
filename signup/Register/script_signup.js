@@ -9,6 +9,7 @@ function togglePasswordVisibility() {
         icon.setAttribute("name", "eye");
     }
 }
+
 function redirect() {
-    window.location.href = "../index.html";
+    window.location.href = "../index_signup.html";
 }
