@@ -26,33 +26,32 @@
     <div class="wrapper">
         <div class="form-box">
             <h2>Register</h2>
-            <form action="">
+            <form action="/register" method="post">
                 <div class="input-box">
                     <span class="icon"><ion-icon name="Person"></ion-icon></span>
-                    <input type="text" required>
+                    <input type="text" name="username" required>
                     <label>Username</label>
                 </div>
                 <div class="input-box">
                     <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                    <input type="email" required>
+                    <input type="email" name="email" required>
                     <label>Email</label>
                 </div>
                 <div class="input-box">
-                    <input type="password" id="password" required>
+                    <input type="password" name="password" id="password" required>
                     <label for="password">Password</label>
                     <ion-icon name="eye" class="icon" onclick="togglePasswordVisibility()"></ion-icon>
                 </div>                
                 <div class="remember-forget">
-                    <label><input type="checkbox">Agree to T&Cs</label>
+                    <label><input type="checkbox" name="agree">Agree to T&Cs</label>
                     <a href="../../About/about.html">T&cs Documentations</a>
                 </div>
-                <button type="submit" class="btn" onclick="redirect()">Register</button>
+                <button type="submit" class="btn">Register</button>
                 <div class="login-register">
-                    <p>Already have a account?<a href="../index_signup.html" class="register-link">Login</a></p>
+                    <p>Already have an account?<a href="../index_signup.html" class="register-link">Login</a></p>
                 </div>
             </form>
         </div>
-    </div>
     </div>
 
     <div class="wrapper">
